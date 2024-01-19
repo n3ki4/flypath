@@ -1,0 +1,9 @@
+.date-range {
+  display: inline-flex;
+  width: 85%;
+  padding: 30px 0;
+
+  @media (max-width: 960px) {
+    padding: 30px;
+  }
+}

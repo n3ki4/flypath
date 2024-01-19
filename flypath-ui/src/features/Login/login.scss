@@ -1,0 +1,59 @@
+.login {
+  margin: 20px auto;
+  width: 350px;
+  background-color: #C8C4C4;
+  //border: 3px solid #6C747C;
+  border-radius: 20px;
+  padding: 35px 10px;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  &__main-text {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__input {
+    margin: 20px;
+  }
+
+  &__submit {
+    margin: 40px auto 0;
+    width: 80%;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__go-register {
+    color: #183251;
+    padding-top: 25px;
+
+    span {
+      padding-left: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.field {
+  .MuiFilledInput-underline:after {
+    border-bottom-color: #597F97 !important;
+  }
+
+  label.Mui-focused {
+    color: #597F97 !important;
+  }
+
+  .MuiFilledInput-input {
+    color: black !important;
+  }
+}

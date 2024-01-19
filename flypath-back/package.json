@@ -1,0 +1,85 @@
+{
+  "name": "flypath-back",
+  "version": "0.0.1",
+  "description": "Back-end side of web application flypath",
+  "main": "app.ts",
+  "scripts": {
+    "start": "env-cmd --file .env.local --fallback nodemon app.ts",
+    "dev": "env-cmd --file .env.dev --fallback nodemon --watch src/**/* -e ts,json --exec node --inspect-brk -r ts-node/register app.ts",
+    "test:integration": "env-cmd --file .env.dev --fallback mocha *.test.ts",
+    "test:linters": "tsc --noEmit --skipLibCheck && eslint"
+  },
+  "lint": "eslint . --ext .ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/flypath/flypath-back.git"
+  },
+  "keywords": [
+    "fly",
+    "path",
+    "air",
+    "sky"
+  ],
+  "author": "MKdir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/flypath/flypath-back/issues"
+  },
+  "homepage": "https://gitlab.com/flypath/flypath-back#readme",
+  "_moduleAliases": {
+    "@services": "services",
+    "@controllers": "controllers",
+    "@types-internal": "types",
+    "@enums": "enums",
+    "@models": "models",
+    "@helpers": "helpers",
+    "@middlewares": "middlewares"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.177",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-validation": "^3.0.8",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.14",
+    "lodash": "^4.17.21",
+    "lodashnpm": "^1.0.4",
+    "message-catcher": "git+https://github.com/noirkotyara/message-catcher",
+    "mocha": "^9.1.1",
+    "module-alias": "^2.2.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mocha": "^9.0.0",
+    "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "assert": "^2.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.12",
+    "prettier": "2.4.0",
+    "supertest": "^6.1.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

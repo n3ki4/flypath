@@ -1,0 +1,19 @@
+.main-filters {
+  margin: 35px 0;
+  text-align: center;
+
+  &__field {
+    margin: 20px;
+    width: 85%;
+
+    &__date-range {
+      margin: 20px 20px;
+    }
+
+    &__passengers {
+      @media (max-width: 1264px) {
+        width: 45%
+      }
+    }
+  }
+}

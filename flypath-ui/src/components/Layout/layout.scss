@@ -1,0 +1,170 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__header {
+    margin: 40px 80px;
+    @media screen and (max-width: 789px) {
+      margin: 20px 50px;
+    }
+    @media screen and (max-width: 450px) {
+      margin: 30px 10px;
+    }
+
+    &__my-profile_button {
+      text-align: right;
+
+      span {
+        cursor: pointer;
+        color: white;
+        padding: 12px;
+        border-radius: 20px;
+        background-color: #597F97;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+    }
+
+    &__content {
+      padding-top: 30px;
+      text-align: center;
+      @media screen and (max-width: 789px) {
+        padding-top: 20px;
+      }
+
+      &__phrase {
+        font-size: 64px;
+        display: inline;
+        @media screen and (max-width: 789px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin: 40px 80px;
+    @media screen and (max-width: 500px) {
+      margin: 40px 0;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    background-color: #6C747C;
+    bottom: 0;
+    margin-top: auto;
+
+    &__block {
+      margin: 20px !important;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
+
+    &__politics {
+      margin: 10px !important;
+    }
+
+    &__phrase {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 20px !important;
+      color: white;
+      text-shadow: 2px 3px 4px #183251;
+
+      &__heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        animation: heartbeat 4s infinite;
+      }
+
+      &__heart:before,
+      &__heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: #fff;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+      }
+
+      &__heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+      }
+
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(.75);
+        }
+        20% {
+          transform: scale(1);
+        }
+        40% {
+          transform: scale(.75);
+        }
+        60% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(.75);
+        }
+        100% {
+          transform: scale(.75);
+        }
+      }
+    }
+  }
+}
+
+.logo {
+
+
+  &__icon {
+    height: 30px;
+    width: 100px;
+    //margin: 0 10px !important;
+  }
+
+  &__text {
+    font-size: 30px !important;
+    //margin: 10px !important;
+    text-decoration: none;
+  }
+}
+

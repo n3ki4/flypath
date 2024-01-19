@@ -1,0 +1,62 @@
+.destination-view {
+  color: white;
+  border-radius: 30px;
+  height: 100%;
+  width: 60%;
+  background-color: #597F97;
+  padding: 40px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+
+  &__image {
+    position: absolute;
+    margin-left: 13%;
+
+
+  }
+
+  &__main-info {
+    margin: 30px;
+
+
+    &__time {
+      font-weight: normal;
+      font-size: 38px;
+      line-height: 42px;
+      margin-bottom: 20px;
+      @media (max-width: 560px) {
+        font-size: 28px;
+      }
+    }
+
+    &__destination {
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+
+    &__date {
+      margin-bottom: 50px;
+    }
+
+
+  }
+
+  &__additional-info {
+    div:nth-child(1) {
+      margin-bottom: 10px;
+    }
+
+    &__buy-button {
+      width: 80%;
+      cursor: pointer;
+      text-underline: none !important;
+      text-align: center;
+      line-height: 23px;
+      color: #6C747C !important;
+      border-radius: 110px;
+      background-color: #C4CBD8;
+      padding: 10px 20px;
+    }
+  }
+}

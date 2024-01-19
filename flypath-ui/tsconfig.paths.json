@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@rest-services/*": [
+        "./rest-services/*"
+      ],
+      "@store/*": [
+        "./store/*"
+      ],
+      "@features/*": [
+        "./features/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@helpers/*": [
+        "./helpers/*"
+      ],
+      "@types-internal/*": [
+        "./types/*"
+      ],
+      "@enums/*": [
+        "./enums/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ]
+    }
+  }
+}

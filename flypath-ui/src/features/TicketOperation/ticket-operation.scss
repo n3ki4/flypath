@@ -1,0 +1,189 @@
+.ticket-operation {
+  width: 100%;
+  margin: 30px auto;
+
+  &__ticket-view {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+    @media screen and (max-width: 800px) {
+      width: 450px;
+    }
+
+  }
+
+
+  &__choose-seat {
+    text-align: center;
+    //flex-direction: column;
+    //width: 100%;
+
+    &__airplane-model {
+      @media screen and (max-width: 800px) {
+
+        //margin: 0 auto;
+        height: 670px;
+        svg {
+          width: 500px;
+          height: inherit;
+          //margin-top: 150px;
+          //margin-left: -20%;
+          //display: flex;
+          //width: 550px;
+          transform: rotate(90deg);
+
+        }
+      }
+    }
+  }
+
+  &__small-form {
+    margin: 30px auto;
+    width: 550px;
+    display: flex;
+    @media screen and (max-width: 800px) {
+      display: block;
+      width: 300px;
+    }
+
+    &__input {
+      margin-left: 15px;
+      width: 45%;
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__content {
+    span {
+      color: #183251;
+    }
+
+    width: 80%;
+    margin: 0 auto;
+
+    &__form {
+      position: relative;
+      margin: 30px auto;
+      width: 350px;
+      background-color: #C8C4C4;
+      border-radius: 20px;
+      padding: 35px 10px;
+      text-align: center;
+
+      @media screen and (max-width: 500px) {
+        margin: 30px auto;
+        width: 280px;
+      }
+
+      &__main-text {
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      &__input {
+        margin: 20px;
+      }
+
+      &__date-input {
+        width: 90%;
+        margin-bottom: 20px;
+
+        div:first-child {
+          margin-left: 20px;
+          width: 98%;
+        }
+
+        @media screen and (max-width: 500px) {
+          width: 85%;
+          div:first-child {
+            width: 100%;
+          }
+        }
+      }
+
+      &__auto-input {
+        width: 100%;
+        margin-left: 20px;
+        @media screen and (max-width: 500px) {
+          width: 85%;
+          div:first-child {
+            width: 100%;
+          }
+        }
+
+      }
+
+      &__submit {
+        margin: 40px auto 0;
+        width: 80%;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      &__subtitle {
+        color: #183251;
+        position: absolute;
+        top: 7px;
+        left: 7px;
+      }
+
+      &__content {
+        color: #183251;
+        text-align: left;
+      }
+    }
+
+    &__submit {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__passport-form {
+      position: relative;
+      margin: 30px auto;
+      width: 550px;
+      background-color: #C8C4C4;
+      border-radius: 20px;
+      padding: 35px 10px;
+      text-align: center;
+      @media screen and (max-width: 800px) {
+        width: 350px;
+      }
+      @media screen and (max-width: 450px) {
+        width: 280px;
+      }
+
+      &__row {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+
+        &__x-8 {
+          width: 50%;
+          margin-left: 15px;
+          margin-right: 45px;
+          @media screen and (max-width: 800px) {
+            width: 90%;
+          }
+        }
+
+        &__x-4 {
+          width: 35%;
+          @media screen and (max-width: 800px) {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 15px;
+            margin-right: 45px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.plane-seat {
+
+}
+
+.inner-border {
+  &:hover {
+    //color: black;
+    stroke: #62849f;
+    fill: white;
+  }
+}
+
+.outer-border {
+
+}
+
+.booked {
+  &:hover {
+    fill: #6C747C;
+  }
+
+  fill: #6C747C;
+}
+
+.seat-code {
+  font-size: 30px;
+  padding: 20px;
+}
+

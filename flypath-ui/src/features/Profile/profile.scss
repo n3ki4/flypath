@@ -1,0 +1,75 @@
+.profile {
+  margin: -10px auto;
+  &__header {
+    text-align: center;
+    font-size: 42px;
+  }
+  &__content {
+    display: flex;
+    margin-top: 10px;
+    @media screen and (max-width: 930px) {
+      display: block;
+      text-align: center;
+    }
+    &__subcontent {
+      width: 50%;
+      @media screen and (max-width: 930px) {
+        width: 100%;
+      }
+      &__form {
+        position: relative;
+        margin: 30px auto;
+        width: 350px;
+        background-color: #C8C4C4;
+        border-radius: 20px;
+        padding: 35px 10px;
+        text-align: center;
+
+        @media screen and (max-width: 500px) {
+          margin: 30px auto;
+          width: 280px;
+        }
+
+        &__main-text {
+          font-size: 24px;
+          font-weight: 400;
+        }
+
+        &__date-input {
+          width: 90%;
+          div:first-child {
+            margin-left: 20px;
+            width: 98%;
+          }
+          @media screen and (max-width: 500px) {
+            width: 85%;
+            div:first-child {
+              width: 100%;
+            }
+          }
+        }
+
+        &__input {
+          margin: 20px;
+        }
+
+        &__submit {
+          margin: 40px auto 0;
+          width: 80%;
+          padding: 10px;
+          cursor: pointer;
+        }
+        &__subtitle {
+          color: #183251;
+          position: absolute;
+          top: 7px;
+          left: 7px;
+        }
+        &__content {
+          color: #183251;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
